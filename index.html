@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya - ITB Style</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --itb-blue: #003A70;
+            --itb-blue-light: #005A9C;
+            --itb-gray: #f5f5f5;
+        }
+
+        body {
+            background-color: var(--itb-gray);
+        }
+
+        .navbar {
+            background-color: var(--itb-blue);
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .section-title {
+            color: var(--itb-blue);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--itb-blue);
+        }
+
+        footer {
+            background-color: var(--itb-blue);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tentang">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- PROFILE -->
+<section id="profile" class="container text-center py-5">
+    <img src="profile.jpg" class="profile-img" alt="Foto Profil">
+    <h2 class="section-title mt-4">Sandy Setiawan</h2>
+    <p class="lead">Machine Learning Engineer</p>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang" class="container py-5">
+    <h2 class="section-title">About Me</h2>
+    <p>
+        Halo! Saya adalah seorang mahasiswa dan pengembang yang memiliki ketertarikan dalam teknologi,
+        desain UI, dan pengembangan web. Saya fokus pada pembuatan aplikasi modern yang responsif
+        dan memiliki pengalaman pengguna yang baik.
+    </p>
+</section>
+
+<!-- PROJECT -->
+<section id="project" class="container py-5">
+    <h2 class="section-title">Project</h2>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Deskripsi singkat mengenai project yang pernah dibuat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">Deskripsi singkat mengenai project yang pernah dibuat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">Deskripsi singkat mengenai project yang pernah dibuat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+    <h2 class="section-title">Contact</h2>
+
+    <form action="https://formspree.io/f/movgllwo" method="POST">
+        <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Masukkan email Anda">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="4" placeholder="Tulis pesan Anda..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="background-color: var(--itb-blue)">Kirim</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 | Sandy Setiawan
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
